@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MTS.API</name>
+    </assembly>
+    <members>
+        <member name="T:MTS.API.Base.BaseRepo">
+            <summary>
+            Base repository for comman responces
+            </summary>
+        </member>
+        <member name="M:MTS.API.Base.BaseRepo.CustomResponce(System.Int32,System.Boolean,System.String,System.Object)">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Base.BaseRepo.CustomResponce(System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Base.BaseRepo.CustomResponce``1(System.Int32,System.Boolean,System.String,``0)">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Base.BaseRepo.CustomResponce``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MTS.API.Base.IBaseRepo">
+            <summary>
+            Base repository for comman responces
+            </summary>
+        </member>
+        <member name="M:MTS.API.Base.IBaseRepo.CustomResponce(System.Int32,System.Boolean,System.String,System.Object)">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Base.IBaseRepo.CustomResponce(System.Int32,System.Boolean,System.String,System.String)">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Base.IBaseRepo.CustomResponce``1(System.Int32,System.Boolean,System.String,``0)">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Base.IBaseRepo.CustomResponce``1(System.Int32,System.Boolean,System.String,System.Collections.Generic.List{``0})">
+            <summary>
+            Comman responce for api
+            </summary>
+            <param name="statusCode"></param>
+            <param name="success"></param>
+            <param name="message"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MTS.API.Controllers.HomeController.Medicines(DataTables.AspNet.Core.IDataTablesRequest)">
+            <summary>
+            Get data table of medicines
+            </summary>
+            <param name="requestModel"></param>
+            <returns></returns>
+            <response code="200">Returns success: true</response>
+        </member>
+        <member name="M:MTS.API.Controllers.HomeController.Medicine(System.String)">
+            <summary>
+            Get medecine
+            </summary>
+            <param name="id">Id of medecine</param>
+            <returns></returns>
+            <response code="200">Returns success: true</response>
+        </member>
+        <member name="M:MTS.API.Controllers.HomeController.AddMedicine(MTS.API.Models.MedicineViewModel)">
+            <summary>
+            Add Medicine
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+            <response code="200">Returns success: true</response>
+        </member>
+        <member name="M:MTS.API.Controllers.HomeController.UpdateMedicine(System.String,System.String)">
+            <summary>
+            Update notes in medicine
+            </summary>
+            <param name="id">Id of medicine</param>
+            <param name="notes">Notes of medicine</param>
+            <returns></returns>
+            <response code="200">Returns success: true</response>
+        </member>
+        <member name="M:MTS.API.Controllers.HomeController.DeleteMedicine(System.String)">
+            <summary>
+            Delete Medicine
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+            <response code="200">Returns success: true</response>
+        </member>
+        <member name="T:MTS.API.DI.Dependencies">
+            <summary>
+            Manage dependencies of project
+            </summary>
+        </member>
+        <member name="M:MTS.API.DI.Dependencies.ConfigureDI(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Mathod for manage dependencies of project
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>
